@@ -11,19 +11,21 @@ function Contacts ()  {
     const [deleteContact , setDeleteContact] = useState(null);
 
     useEffect(() => {
+        // api call to get the contact
         axios.get('https://jsonplaceholder.typicode.com/users')
         .then (res => {
             setContacts(res.data);
         })
         .catch (err => {console.log(err)});
     },[]);
-
+//  to add the contact
     const handleAddContact = () => {
         setShowAddForm(true);
     }
 
     const handleAddFormsubmit = (e) => {
         e.preventDefault();
+        // to send http post request to url
         axios.post('https://jsonplaceholder.typicode.com/users', newContact)
         .then (res => {
             setContacts([...contacts,res.data]);
@@ -36,7 +38,10 @@ function Contacts ()  {
 
     const handleInputChange = (e) => {
         const {name,value} = e.target;
+        // used spread operator to make shallow copy without modify the original object directly
+        // name and value are keys whose values you want to assign to newContact
         setNewContact({...newContact,[name]: [value]});
+        
 
     }
 
@@ -46,6 +51,7 @@ function Contacts ()  {
 
     const handleEditFormSubmit = e => {
         e.preventDefault();
+        // put method is used when you need to update the existing resource on the server
         axios.put(`https://jsonplaceholder.typicode.com/users/${editContact.id}`, editContact)
         .then (res => {
             const updatedContact = contacts.map((contact) => {
@@ -64,7 +70,9 @@ function Contacts ()  {
     };
 
     const handleEditInputChange = (event) => {
+        // destructing the name and value properties from event.target
         const {name , value} = event.target;
+        // to update the state of the component
         setEditContact({...editContact, [name]:value});
     };
 
