@@ -82,6 +82,7 @@ function Contacts ()  {
     };
 
     const handleDeleteConfirmation = () => {
+        // to delete the existing data
         axios.delete(`https://jsonplaceholder.typicode.com/users/${deleteContact.id}`)
         .then (res => {
             const updatedContact = contacts.filter(contact => {
