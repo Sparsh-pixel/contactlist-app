@@ -18,11 +18,12 @@ function Contacts ()  {
         })
         .catch (err => {console.log(err)});
     },[]);
+
 //  to add the contact
     const handleAddContact = () => {
         setShowAddForm(true);
     }
-
+// to capture and handle form submission events. 
     const handleAddFormsubmit = (e) => {
         e.preventDefault();
         // to send http post request to url
@@ -36,6 +37,8 @@ function Contacts ()  {
         });
     };
 
+    // to capture what the user has entered into the form fields 
+
     const handleInputChange = (e) => {
         const {name,value} = e.target;
         // used spread operator to make shallow copy without modify the original object directly
@@ -44,7 +47,7 @@ function Contacts ()  {
         
 
     }
-
+//  to edit the contact
     const handleEditContact = (contact) => {
         setEditContact(contact);
     };
