@@ -188,7 +188,7 @@ function Contacts ()  {
                     </form>
                 </div>
             )}
-
+{/* this will run when the condition is true */}
             {showDeleteConfirmation && (
                 <div className="modal">
                     <p style = {{color:'white'}}>Are you sure want to delete {deleteContact.name}</p>
