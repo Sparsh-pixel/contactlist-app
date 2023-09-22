@@ -81,6 +81,7 @@ function Contacts ()  {
 
     const handleDeleteContact = (contact) => {
         setDeleteContact(contact);
+        // this will show the modal of delete contact 
         setShowDeleteConfirmation(true);
     };
 
