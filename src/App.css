@@ -1,190 +1,194 @@
 .container {
-    max-width: 900px;
-    margin-inline: auto;
-    padding: 1rem;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  button {
-    background-color: #00a2ff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-  }
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
 
-  
-  .addform {
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    border-radius: 0.25rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-  .addform div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+button {
+  background-color: #00a2ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
 
-  .addform label{
-    width: 70px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="url"] {
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-  
-  input:focus {
-    outline: none;
-    border: 1px solid #4caf50;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
+.addform {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .edit-form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-  }
+.addform div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .edit-form div label{
-    width: 100px;
-  }
-  
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal p {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  .modal button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    margin-right: 0.5rem;
-  }
-  
-  .modal button:hover {
-    background-color: #3e8e41;
-  }
-  
+.addform label {
+  width: 70px;
+}
 
-  .btns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btns-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  .edit-btn, .delete-btn {
-    flex: 1;
-    margin: 0 5px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .edit-btn:hover {
-    background-color: #0062cc;
-  }
-  .delete-btn:hover{
-    background-color: red;
-  }
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"] {
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
 
-  table{
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-  }
+input:focus {
+  outline: none;
+  border: 1px solid #4caf50;
+}
 
-  td{
-    padding: 10px;
-  }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.edit-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
 
-  .close-btn{
-    background: transparent!important;
-    margin-right: -240px!important;
-  }
+.edit-form div label {
+  width: 100px;
+}
 
-  .close-btn2{
-    position: absolute;
-    right: 0px;
-    font-size: 1rem;
-    background: transparent!important;
-  }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.modal button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.modal button:hover {
+  background-color: #3e8e41;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btns-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #0062cc;
+}
+.delete-btn:hover {
+  background-color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+}
+
+.close-btn {
+  background: transparent !important;
+  margin-right: -240px !important;
+}
+
+.close-btn2 {
+  position: absolute;
+  right: 0px;
+  font-size: 1rem;
+  background: transparent !important;
+}
+.search-box input{
+  padding: 5px 28px;
+  margin: 16px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  border: 0;
+}
